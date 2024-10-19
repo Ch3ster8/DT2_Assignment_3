@@ -10,13 +10,13 @@ config_version=5
 
 [application]
 
-config/name="TurnBased-AI"
+config/name="3D_AI"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="TurnBased-AI"
+project/assembly_name="3D_AI"
 
 [rendering]
 
