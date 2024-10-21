@@ -1,0 +1,9 @@
+Sorted from 1 to 8:
+	Twit
+	Flutter
+	Striker
+	Moon
+	Incision
+	Goliath
+	Lance
+	Farlight

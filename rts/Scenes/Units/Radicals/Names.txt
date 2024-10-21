@@ -1,0 +1,9 @@
+Sorted from 1 to 8:
+	Neonic
+	Cyclops
+	Apostle
+	Regent
+	Purge
+	Melody
+	Synapse
+	Cresent
