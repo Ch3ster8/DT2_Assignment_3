@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cx04nisdtisyt"]
+[gd_scene load_steps=6 format=3 uid="uid://cx04nisdtisyt"]
 
 [ext_resource type="Script" path="res://Scripts/camera.gd" id="1_tpd3x"]
 [ext_resource type="PackedScene" uid="uid://dni15oy26te86" path="res://Scenes/Units/Radicals/neonic.tscn" id="2_jod6k"]
@@ -6,6 +6,11 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o8o52"]
 radius = 0.01
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_obe77"]
+vertices = PackedVector2Array(1604.85, 658.031, -1008.77, 667.961, -973.211, -923.258, 1581.14, -995.711)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-983, -933, 1591, -1006, 1615, 668, -1019, 678)])
 
 [node name="Node2D" type="Node2D"]
 
@@ -17,7 +22,12 @@ zoom_sensitivity = 0.25
 [node name="Neonic" parent="." instance=ExtResource("2_jod6k")]
 
 [node name="Mouse" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("3_ss71q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mouse"]
 shape = SubResource("CircleShape2D_o8o52")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_obe77")

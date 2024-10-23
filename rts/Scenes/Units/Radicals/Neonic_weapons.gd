@@ -5,7 +5,7 @@ extends Node
 var tick : int
 @onready var parent := owner as stats
 var can_shoot = true
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("left_mouse"):
 		fire()
 func fire():

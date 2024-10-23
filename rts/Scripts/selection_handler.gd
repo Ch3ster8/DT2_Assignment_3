@@ -1,23 +1,25 @@
 extends Area2D
 var selected := []
-func _process(delta):
+func _process(_delta):
 	global_position = get_global_mouse_position()
 
 func _physics_process(delta):
-	monitorable = false
 	monitoring = false
 	if Input.is_action_just_released("left_mouse"):
-		monitorable = true
 		monitoring = true
 		await get_tree().physics_frame
-		if has_overlapping_areas():
+		if has_overlapping_bodies():
 			if Input.is_action_pressed("multi_select"):
-				for area in get_overlapping_areas():
-					if !selected.has(area):
-						selected.append(area)
+				for unit in get_overlapping_bodies():
+					if !selected.has(unit):
+						selected.append(unit as stats)
 			else:
 				selected.clear()
-				selected.append(get_overlapping_areas()[-1])
+				selected.append(get_overlapping_bodies()[-1])
 		else:
 			selected.clear()
 		print(selected)
+	elif Input.is_action_just_pressed("right_mouse"):
+		if selected.size() > 0:
+			for unit in selected:
+				unit.move_to(get_global_mouse_position())

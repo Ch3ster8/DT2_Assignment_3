@@ -8,7 +8,7 @@ extends Node2D
 func fire():
 	var instance = bullet.instantiate()
 	instance.speed = bullet_speed
-	instance.range = parent.range
+	instance._range = parent._range
 	instance.scale = Vector2(bullet_scale, bullet_scale)
 	add_child(instance)
 	if get_child_count() > 50:

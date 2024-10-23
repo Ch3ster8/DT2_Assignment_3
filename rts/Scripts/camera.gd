@@ -1,7 +1,7 @@
 extends Camera2D
 @export_range(0, 10) var sensitivity
 @export_range(0, 1) var zoom_sensitivity
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction = Input.get_vector("left", "right", "forward", "down")
 	if direction:
 		position += direction * sensitivity
