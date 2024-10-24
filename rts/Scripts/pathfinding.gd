@@ -27,37 +27,55 @@ func _process(delta):
 	if timer > 0:
 		timer -= delta
 
-func Navigate(interest : Vector2):
-	#Getting the direction to the player
-	nav_agent.target_position = interest
-	direction = nav_agent.get_next_path_position() - global_position
-	direction = direction.normalized()
-	print(direction)
-	dangers = [0,0,0,0,0,0,0,0]
-	if has_overlapping_bodies():
-		#Looping through the raycasts to see if we are near anything and adding the value 5 in the direction we are colliding
-		#and the value 2 on the directions closest to the colliding side
+func Navigate(interest : Vector2, object):
+	if parent.position.distance_to(interest) > 10:
+		#Getting the direction to the player
+		nav_agent.target_position = interest
+		get_next_dir()
+		dangers = [0,0,0,0,0,0,0,0]
+		check_dangers()
+		check_interests()
+		#Moving the enemy using the movement controller
+		movement.MoveTowards(get_final_dir())
+		
+		#Checks if an ally unit has the same movement command and if they have and we are colliding with it;
+		#And they have reached their destination then that means we have also reached our destination
 		for x in raycasts.size():
 			if raycasts[x].is_colliding():
-				dangers[x] = 6
-				'''if x-1 < dangers.size():
-					if dangers[x-1] < 6:
-						dangers[x-1] = 3
-				if x+1 < dangers.size():
-					if dangers[x+1] < 6:
-						dangers[x+1] = 3'''
-	for x in directions.size():
-		interests[x] = directions[x].dot(randomDir())
-	#Looping through the raycasts to see if we are near anything and adding the value 5 in the direction we are colliding
-	#and the value 2 on the directions closest to the colliding side
+				var collider = raycasts[x].get_collider()
+				if !collider is CharacterBody2D:
+					collider = collider.owner
+				if collider is CharacterBody2D:
+					if Mouse.selected.has(collider):
+						if collider.nav == null:
+							movement.Decelerate()
+							object.nav = null
+							return
+	else:
+		object.nav = null
+		movement.Decelerate()
+	movement.Move(parent)
+	
+func get_next_dir():
+	#Gets the direction to the target position
+	direction = nav_agent.get_next_path_position() - global_position
+	direction = direction.normalized()
+	
+func check_dangers():
+	#Looping through the raycasts to see if we are near anything and adding the value 6 in the direction we are colliding
 	for x in raycasts.size():
 		if raycasts[x].is_colliding():
 			dangers[x] = 6
+
+func check_interests():
+	for x in directions.size():
+		interests[x] = directions[x].dot(direction)
 	#looping through the interests to minus the dangers, the largest value after this step is the direction we will move in
 	for x in interests.size():
 		interests[x] -= dangers[x]
 		if interests[x] < 0:
 			interests[x] = 0
+func get_final_dir():
 	#Getting the final direction
 	var finalDirection = Vector2.ZERO
 	for x in interests.size():
@@ -65,10 +83,9 @@ func Navigate(interest : Vector2):
 	#Making the final direction rounded by the steering power variable
 	var steering_direction = finalDirection - movement.velocity
 	finalDirection = movement.velocity + steering_direction * turn_power
-	#Lastly moving the enemy using the movement controller
-	movement.MoveTowards(finalDirection.normalized())
-	movement.Move(parent)
+	return finalDirection.normalized()
 
+#For random movement if needed
 func randomDir():
 	if timer <= 0:
 		timer = cooldown

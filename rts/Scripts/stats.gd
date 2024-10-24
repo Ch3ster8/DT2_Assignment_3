@@ -8,8 +8,7 @@ class_name stats
 @export var flying : bool
 @export var hit_flying : bool
 @export var pathfinding : PathFinding
-var navigating = false
-var nav : Vector2
+var nav
 
 func move_to(position):
 	nav = position
@@ -18,4 +17,4 @@ func move_to(position):
 
 func _physics_process(delta):
 	if nav:
-		pathfinding.Navigate(nav)
+		pathfinding.Navigate(nav, self)

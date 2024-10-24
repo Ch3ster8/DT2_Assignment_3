@@ -18,7 +18,6 @@ func _physics_process(delta):
 				selected.append(get_overlapping_bodies()[-1])
 		else:
 			selected.clear()
-		print(selected)
 	elif Input.is_action_just_pressed("right_mouse"):
 		if selected.size() > 0:
 			for unit in selected:
