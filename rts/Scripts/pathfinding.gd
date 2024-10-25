@@ -67,8 +67,11 @@ func get_next_dir():
 func check_dangers():
 	#Looping through the raycasts to see if we are near anything and adding the value 6 in the direction we are colliding
 	for x in raycasts.size():
-		if raycasts[x].is_colliding():
+		if raycasts[x-2].is_colliding():
 			dangers[x] = 6
+	print(dangers)
+			
+
 
 func check_interests():
 	for x in directions.size():
