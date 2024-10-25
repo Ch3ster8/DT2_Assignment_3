@@ -28,15 +28,18 @@ func _process(delta):
 		timer -= delta
 
 func Navigate(interest : Vector2, object):
-	if parent.position.distance_to(interest) > 10:
+	if parent.position.distance_to(interest) > 30:
 		#Getting the direction to the player
 		nav_agent.target_position = interest
 		get_next_dir()
+		
 		dangers = [0,0,0,0,0,0,0,0]
 		check_dangers()
 		check_interests()
 		#Moving the enemy using the movement controller
 		movement.MoveTowards(get_final_dir())
+		object.look_at(object.velocity)
+		
 		
 		#Checks if an ally unit has the same movement command and if they have and we are colliding with it;
 		#And they have reached their destination then that means we have also reached our destination
@@ -44,7 +47,7 @@ func Navigate(interest : Vector2, object):
 			if raycasts[x].is_colliding():
 				var collider = raycasts[x].get_collider()
 				if !collider is CharacterBody2D:
-					collider = collider.owner
+					collider = raycasts[x].get_collider().owner
 				if collider is CharacterBody2D:
 					if Mouse.selected.has(collider):
 						if collider.nav == null:

@@ -3,56 +3,56 @@
 [ext_resource type="Script" path="res://Scripts/pathfinding.gd" id="1_dmdvi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gcvw6"]
-radius = 59.1354
+radius = 77.0065
 
 [node name="Pathfinding" type="Area2D"]
 collision_mask = 7
 script = ExtResource("1_dmdvi")
 
 [node name="Down" type="RayCast2D" parent="."]
-target_position = Vector2(0, 60)
+target_position = Vector2(0, 80)
 collision_mask = 7
 collide_with_areas = true
 
 [node name="Down_Right" type="RayCast2D" parent="."]
 rotation = -0.785398
-target_position = Vector2(0, 60)
+target_position = Vector2(0, 80)
 collision_mask = 7
 collide_with_areas = true
 
 [node name="Right" type="RayCast2D" parent="."]
 rotation = -1.5708
-target_position = Vector2(0, 60)
+target_position = Vector2(0, 80)
 collision_mask = 7
 collide_with_areas = true
 
 [node name="Up_Right" type="RayCast2D" parent="."]
 rotation = -2.35619
-target_position = Vector2(0, 60)
+target_position = Vector2(0, 80)
 collision_mask = 7
 collide_with_areas = true
 
 [node name="Up" type="RayCast2D" parent="."]
 rotation = 3.14159
-target_position = Vector2(0, 60)
+target_position = Vector2(0, 80)
 collision_mask = 7
 collide_with_areas = true
 
 [node name="Up_Left" type="RayCast2D" parent="."]
 rotation = 2.35619
-target_position = Vector2(0, 60)
+target_position = Vector2(0, 80)
 collision_mask = 7
 collide_with_areas = true
 
 [node name="Left" type="RayCast2D" parent="."]
 rotation = 1.5708
-target_position = Vector2(0, 60)
+target_position = Vector2(0, 80)
 collision_mask = 7
 collide_with_areas = true
 
 [node name="Down_Left" type="RayCast2D" parent="."]
 rotation = 0.785398
-target_position = Vector2(0, 60)
+target_position = Vector2(0, 80)
 collision_mask = 7
 collide_with_areas = true
 
