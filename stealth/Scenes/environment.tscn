@@ -1,0 +1,2389 @@
+[gd_scene load_steps=14 format=3 uid="uid://bujlmw2mj4bwl"]
+
+[ext_resource type="PackedScene" uid="uid://ducue5apa1ft2" path="res://Assets/Outsourced/Halloween_bits/tree_pine_yellow_small.fbx" id="1_d3vlm"]
+[ext_resource type="PackedScene" uid="uid://dekvs1h6tutbg" path="res://Assets/Outsourced/Halloween_bits/tree_pine_yellow_large.fbx" id="2_xam4i"]
+[ext_resource type="PackedScene" uid="uid://1t5qstoql6q7" path="res://Assets/Outsourced/Halloween_bits/tree_pine_orange_small.fbx" id="3_y1qnq"]
+[ext_resource type="PackedScene" uid="uid://cvn3xaw4rtgq7" path="res://Assets/Outsourced/Halloween_bits/tree_pine_orange_medium.fbx" id="4_ma8re"]
+[ext_resource type="PackedScene" uid="uid://c2o62r5ydh8f2" path="res://Assets/Outsourced/Halloween_bits/tree_pine_orange_large.fbx" id="5_uoiro"]
+[ext_resource type="PackedScene" uid="uid://bsreet8ljocfm" path="res://Assets/Outsourced/Halloween_bits/tree_dead_small.fbx" id="6_vqt46"]
+[ext_resource type="PackedScene" uid="uid://c8mruym5owxdq" path="res://Assets/Outsourced/Halloween_bits/tree_dead_medium.fbx" id="7_d624j"]
+[ext_resource type="PackedScene" uid="uid://x17jasy56vsj" path="res://Assets/Outsourced/Halloween_bits/tree_dead_large_decorated.fbx" id="8_xg3ai"]
+[ext_resource type="PackedScene" uid="uid://dul0be3125o2s" path="res://Assets/Outsourced/Halloween_bits/tree_dead_large.fbx" id="9_euefe"]
+[ext_resource type="PackedScene" uid="uid://hdknjq2aefss" path="res://Assets/Outsourced/Halloween_bits/arch_gate.fbx" id="10_5x77v"]
+[ext_resource type="PackedScene" uid="uid://bkxtcd0coevdl" path="res://Assets/Outsourced/Halloween_bits/fence.fbx" id="11_v881x"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_a1uwt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_325su"]
+albedo_color = Color(0.47788, 0.47788, 0.47788, 1)
+
+[node name="Environment" type="Node3D"]
+
+[node name="Corner" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, -27)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="Corner"]
+transform = Transform3D(27.48, 0, 0, 0, 27.48, 0, 0, 0, 27.48, 0, -1.04507, 0)
+use_collision = true
+mesh = SubResource("PlaneMesh_a1uwt")
+material = SubResource("StandardMaterial3D_325su")
+
+[node name="Trees" type="Node3D" parent="Corner"]
+
+[node name="tree_pine_yellow_small" parent="Corner/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner/Trees" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner/Trees" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner/Trees" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner/Trees" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner/Trees" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner/Trees" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner/Trees" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner/Trees" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner/Trees" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees2" type="Node3D" parent="Corner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.03, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner/Trees2" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner/Trees2" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner/Trees2" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner/Trees2" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner/Trees2" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner/Trees2" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner/Trees2" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner/Trees2" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner/Trees2" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees3" type="Node3D" parent="Corner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.005, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner/Trees3" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner/Trees3" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner/Trees3" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner/Trees3" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner/Trees3" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner/Trees3" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner/Trees3" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner/Trees3" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner/Trees3" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees4" type="Node3D" parent="Corner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.535, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner/Trees4" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner/Trees4" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner/Trees4" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner/Trees4" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner/Trees4" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner/Trees4" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner/Trees4" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner/Trees4" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner/Trees4" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees5" type="Node3D" parent="Corner"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -15.935)
+
+[node name="tree_pine_yellow_small" parent="Corner/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner/Trees5" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner/Trees5" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner/Trees5" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner/Trees5" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner/Trees5" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner/Trees5" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner/Trees5" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner/Trees5" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner/Trees5" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees6" type="Node3D" parent="Corner"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0.23)
+
+[node name="tree_pine_yellow_small" parent="Corner/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner/Trees6" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner/Trees6" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner/Trees6" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner/Trees6" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner/Trees6" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner/Trees6" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner/Trees6" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner/Trees6" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner/Trees6" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees7" type="Node3D" parent="Corner"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 16.045)
+
+[node name="tree_pine_yellow_small" parent="Corner/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner/Trees7" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner/Trees7" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner/Trees7" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner/Trees7" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner/Trees7" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner/Trees7" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner/Trees7" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner/Trees7" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner/Trees7" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Corner2" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 27, 0, -27)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="Corner2"]
+transform = Transform3D(27.48, 0, 0, 0, 27.48, 0, 0, 0, 27.48, 0, -1.04507, 0)
+use_collision = true
+mesh = SubResource("PlaneMesh_a1uwt")
+material = SubResource("StandardMaterial3D_325su")
+
+[node name="Trees" type="Node3D" parent="Corner2"]
+
+[node name="tree_pine_yellow_small" parent="Corner2/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner2/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner2/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner2/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner2/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner2/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner2/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner2/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner2/Trees" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner2/Trees" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner2/Trees" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner2/Trees" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner2/Trees" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner2/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner2/Trees" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner2/Trees" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner2/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner2/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner2/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner2/Trees" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner2/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner2/Trees" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees2" type="Node3D" parent="Corner2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.03, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner2/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner2/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner2/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner2/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner2/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner2/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner2/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner2/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner2/Trees2" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner2/Trees2" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner2/Trees2" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner2/Trees2" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner2/Trees2" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner2/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner2/Trees2" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner2/Trees2" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner2/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner2/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner2/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner2/Trees2" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner2/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner2/Trees2" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees3" type="Node3D" parent="Corner2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.005, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner2/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner2/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner2/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner2/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner2/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner2/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner2/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner2/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner2/Trees3" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner2/Trees3" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner2/Trees3" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner2/Trees3" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner2/Trees3" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner2/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner2/Trees3" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner2/Trees3" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner2/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner2/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner2/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner2/Trees3" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner2/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner2/Trees3" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees4" type="Node3D" parent="Corner2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.535, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner2/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner2/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner2/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner2/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner2/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner2/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner2/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner2/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner2/Trees4" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner2/Trees4" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner2/Trees4" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner2/Trees4" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner2/Trees4" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner2/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner2/Trees4" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner2/Trees4" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner2/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner2/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner2/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner2/Trees4" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner2/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner2/Trees4" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees5" type="Node3D" parent="Corner2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -15.935)
+
+[node name="tree_pine_yellow_small" parent="Corner2/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner2/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner2/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner2/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner2/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner2/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner2/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner2/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner2/Trees5" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner2/Trees5" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner2/Trees5" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner2/Trees5" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner2/Trees5" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner2/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner2/Trees5" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner2/Trees5" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner2/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner2/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner2/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner2/Trees5" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner2/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner2/Trees5" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees6" type="Node3D" parent="Corner2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0.23)
+
+[node name="tree_pine_yellow_small" parent="Corner2/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner2/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner2/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner2/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner2/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner2/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner2/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner2/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner2/Trees6" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner2/Trees6" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner2/Trees6" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner2/Trees6" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner2/Trees6" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner2/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner2/Trees6" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner2/Trees6" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner2/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner2/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner2/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner2/Trees6" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner2/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner2/Trees6" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees7" type="Node3D" parent="Corner2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 16.045)
+
+[node name="tree_pine_yellow_small" parent="Corner2/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner2/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner2/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner2/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner2/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner2/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner2/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner2/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner2/Trees7" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner2/Trees7" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner2/Trees7" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner2/Trees7" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner2/Trees7" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner2/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner2/Trees7" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner2/Trees7" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner2/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner2/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner2/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner2/Trees7" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner2/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner2/Trees7" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Corner3" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 27, 0, 27)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="Corner3"]
+transform = Transform3D(27.48, 0, 0, 0, 27.48, 0, 0, 0, 27.48, 0, -1.04507, 0)
+use_collision = true
+mesh = SubResource("PlaneMesh_a1uwt")
+material = SubResource("StandardMaterial3D_325su")
+
+[node name="Trees" type="Node3D" parent="Corner3"]
+
+[node name="tree_pine_yellow_small" parent="Corner3/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner3/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner3/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner3/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner3/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner3/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner3/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner3/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner3/Trees" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner3/Trees" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner3/Trees" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner3/Trees" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner3/Trees" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner3/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner3/Trees" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner3/Trees" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner3/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner3/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner3/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner3/Trees" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner3/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner3/Trees" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees2" type="Node3D" parent="Corner3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.03, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner3/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner3/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner3/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner3/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner3/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner3/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner3/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner3/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner3/Trees2" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner3/Trees2" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner3/Trees2" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner3/Trees2" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner3/Trees2" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner3/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner3/Trees2" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner3/Trees2" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner3/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner3/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner3/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner3/Trees2" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner3/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner3/Trees2" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees3" type="Node3D" parent="Corner3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.005, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner3/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner3/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner3/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner3/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner3/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner3/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner3/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner3/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner3/Trees3" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner3/Trees3" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner3/Trees3" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner3/Trees3" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner3/Trees3" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner3/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner3/Trees3" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner3/Trees3" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner3/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner3/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner3/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner3/Trees3" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner3/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner3/Trees3" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees4" type="Node3D" parent="Corner3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.535, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner3/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner3/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner3/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner3/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner3/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner3/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner3/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner3/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner3/Trees4" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner3/Trees4" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner3/Trees4" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner3/Trees4" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner3/Trees4" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner3/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner3/Trees4" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner3/Trees4" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner3/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner3/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner3/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner3/Trees4" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner3/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner3/Trees4" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees5" type="Node3D" parent="Corner3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -15.935)
+
+[node name="tree_pine_yellow_small" parent="Corner3/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner3/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner3/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner3/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner3/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner3/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner3/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner3/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner3/Trees5" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner3/Trees5" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner3/Trees5" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner3/Trees5" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner3/Trees5" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner3/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner3/Trees5" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner3/Trees5" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner3/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner3/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner3/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner3/Trees5" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner3/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner3/Trees5" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees6" type="Node3D" parent="Corner3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0.23)
+
+[node name="tree_pine_yellow_small" parent="Corner3/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner3/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner3/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner3/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner3/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner3/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner3/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner3/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner3/Trees6" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner3/Trees6" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner3/Trees6" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner3/Trees6" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner3/Trees6" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner3/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner3/Trees6" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner3/Trees6" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner3/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner3/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner3/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner3/Trees6" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner3/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner3/Trees6" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees7" type="Node3D" parent="Corner3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 16.045)
+
+[node name="tree_pine_yellow_small" parent="Corner3/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner3/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner3/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner3/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner3/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner3/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner3/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner3/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner3/Trees7" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner3/Trees7" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner3/Trees7" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner3/Trees7" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner3/Trees7" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner3/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner3/Trees7" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner3/Trees7" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner3/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner3/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner3/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner3/Trees7" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner3/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner3/Trees7" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Corner4" type="Node3D" parent="."]
+transform = Transform3D(1.19249e-08, 0, 1, 0, 1, 0, -1, 0, 1.19249e-08, -27, 0, 27)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="Corner4"]
+transform = Transform3D(27.48, 0, 0, 0, 27.48, 0, 0, 0, 27.48, 0, -1.04507, 0)
+use_collision = true
+mesh = SubResource("PlaneMesh_a1uwt")
+material = SubResource("StandardMaterial3D_325su")
+
+[node name="Trees" type="Node3D" parent="Corner4"]
+
+[node name="tree_pine_yellow_small" parent="Corner4/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner4/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner4/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner4/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner4/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner4/Trees" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner4/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner4/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner4/Trees" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner4/Trees" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner4/Trees" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner4/Trees" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner4/Trees" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner4/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner4/Trees" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner4/Trees" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner4/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner4/Trees" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner4/Trees" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner4/Trees" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner4/Trees" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner4/Trees" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees2" type="Node3D" parent="Corner4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.03, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner4/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner4/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner4/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner4/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner4/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner4/Trees2" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner4/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner4/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner4/Trees2" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner4/Trees2" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner4/Trees2" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner4/Trees2" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner4/Trees2" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner4/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner4/Trees2" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner4/Trees2" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner4/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner4/Trees2" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner4/Trees2" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner4/Trees2" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner4/Trees2" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner4/Trees2" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees3" type="Node3D" parent="Corner4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.005, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner4/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner4/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner4/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner4/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner4/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner4/Trees3" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner4/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner4/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner4/Trees3" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner4/Trees3" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner4/Trees3" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner4/Trees3" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner4/Trees3" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner4/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner4/Trees3" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner4/Trees3" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner4/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner4/Trees3" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner4/Trees3" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner4/Trees3" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner4/Trees3" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner4/Trees3" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees4" type="Node3D" parent="Corner4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.535, 0, 0)
+
+[node name="tree_pine_yellow_small" parent="Corner4/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner4/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner4/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner4/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner4/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner4/Trees4" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner4/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner4/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner4/Trees4" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner4/Trees4" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner4/Trees4" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner4/Trees4" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner4/Trees4" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner4/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner4/Trees4" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner4/Trees4" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner4/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner4/Trees4" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner4/Trees4" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner4/Trees4" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner4/Trees4" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner4/Trees4" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees5" type="Node3D" parent="Corner4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -15.935)
+
+[node name="tree_pine_yellow_small" parent="Corner4/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner4/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner4/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner4/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner4/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner4/Trees5" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner4/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner4/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner4/Trees5" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner4/Trees5" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner4/Trees5" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner4/Trees5" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner4/Trees5" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner4/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner4/Trees5" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner4/Trees5" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner4/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner4/Trees5" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner4/Trees5" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner4/Trees5" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner4/Trees5" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner4/Trees5" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees6" type="Node3D" parent="Corner4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0.23)
+
+[node name="tree_pine_yellow_small" parent="Corner4/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner4/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner4/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner4/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner4/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner4/Trees6" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner4/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner4/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner4/Trees6" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner4/Trees6" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner4/Trees6" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner4/Trees6" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner4/Trees6" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner4/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner4/Trees6" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner4/Trees6" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner4/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner4/Trees6" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner4/Trees6" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner4/Trees6" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner4/Trees6" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner4/Trees6" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="Trees7" type="Node3D" parent="Corner4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 16.045)
+
+[node name="tree_pine_yellow_small" parent="Corner4/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3038, -1.04507, -22.2269)
+
+[node name="tree_pine_yellow_small2" parent="Corner4/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35348, -1.04507, -23.9836)
+
+[node name="tree_pine_yellow_large" parent="Corner4/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0362, -1.04507, -23.9717)
+
+[node name="tree_pine_yellow_large2" parent="Corner4/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40088, -1.04507, -26.6817)
+
+[node name="tree_pine_orange_small" parent="Corner4/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568685, -1.04507, -25.75)
+
+[node name="tree_pine_yellow_large3" parent="Corner4/Trees7" instance=ExtResource("2_xam4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57763, -1.04507, -25.9963)
+
+[node name="tree_pine_orange_small2" parent="Corner4/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00846, -1.04507, -22.8105)
+
+[node name="tree_pine_orange_small3" parent="Corner4/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.19308, -1.04507, -23.0919)
+
+[node name="tree_pine_orange_medium" parent="Corner4/Trees7" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.15521, -1.04507, -23.7621)
+
+[node name="tree_pine_orange_large" parent="Corner4/Trees7" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0843, -1.04507, -26.4117)
+
+[node name="tree_pine_orange_large2" parent="Corner4/Trees7" instance=ExtResource("5_uoiro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46527, -1.04507, -21.1141)
+
+[node name="tree_pine_orange_medium2" parent="Corner4/Trees7" instance=ExtResource("4_ma8re")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0487, -1.04507, -23.1266)
+
+[node name="tree_dead_small" parent="Corner4/Trees7" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5332, -1.04507, -18.9819)
+
+[node name="tree_dead_medium" parent="Corner4/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61797, -1.04507, -18.7553)
+
+[node name="tree_dead_large_decorated" parent="Corner4/Trees7" instance=ExtResource("8_xg3ai")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62504, -1.04507, -20.6709)
+
+[node name="tree_dead_large" parent="Corner4/Trees7" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19727, -1.04507, -21.8659)
+
+[node name="tree_dead_medium2" parent="Corner4/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56991, -1.04507, -19.3046)
+
+[node name="tree_pine_orange_small4" parent="Corner4/Trees7" instance=ExtResource("3_y1qnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37342, -1.04507, -19.2722)
+
+[node name="tree_pine_yellow_small3" parent="Corner4/Trees7" instance=ExtResource("1_d3vlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.881485, -1.04507, -20.5034)
+
+[node name="tree_dead_small2" parent="Corner4/Trees7" instance=ExtResource("6_vqt46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4509, -1.04507, -18.0591)
+
+[node name="tree_dead_medium3" parent="Corner4/Trees7" instance=ExtResource("7_d624j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50528, -1.04507, -21.5175)
+
+[node name="tree_dead_large2" parent="Corner4/Trees7" instance=ExtResource("9_euefe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473893, -1.04507, -18.8916)
+
+[node name="arch_gate" parent="." instance=ExtResource("10_5x77v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.045, 42)
+
+[node name="More_Fences" type="Node3D" parent="."]
+
+[node name="Fences" type="Node3D" parent="More_Fences"]
+
+[node name="fence" parent="More_Fences/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences2" type="Node3D" parent="More_Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
+
+[node name="fence" parent="More_Fences/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences3" type="Node3D" parent="More_Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="fence" parent="More_Fences/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences4" type="Node3D" parent="More_Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
+
+[node name="fence" parent="More_Fences/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="More_Fences2" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.75, 0, 43.75)
+
+[node name="Fences" type="Node3D" parent="More_Fences2"]
+
+[node name="fence" parent="More_Fences2/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences2/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences2/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences2" type="Node3D" parent="More_Fences2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
+
+[node name="fence" parent="More_Fences2/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences2/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences2/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences3" type="Node3D" parent="More_Fences2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="fence" parent="More_Fences2/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences2/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences2/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences4" type="Node3D" parent="More_Fences2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
+
+[node name="fence" parent="More_Fences2/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences2/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences2/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="More_Fences3" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.75, 0, 1.75)
+
+[node name="Fences" type="Node3D" parent="More_Fences3"]
+
+[node name="fence" parent="More_Fences3/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences3/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences3/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences2" type="Node3D" parent="More_Fences3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
+
+[node name="fence" parent="More_Fences3/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences3/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences3/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences3" type="Node3D" parent="More_Fences3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="fence" parent="More_Fences3/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences3/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences3/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences4" type="Node3D" parent="More_Fences3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
+
+[node name="fence" parent="More_Fences3/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences3/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences3/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="More_Fences4" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -45.5, 0, 0)
+
+[node name="Fences" type="Node3D" parent="More_Fences4"]
+
+[node name="fence" parent="More_Fences4/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences4/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences4/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences2" type="Node3D" parent="More_Fences4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
+
+[node name="fence" parent="More_Fences4/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences4/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences4/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences3" type="Node3D" parent="More_Fences4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="fence" parent="More_Fences4/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences4/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences4/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences4" type="Node3D" parent="More_Fences4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
+
+[node name="fence" parent="More_Fences4/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences4/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences4/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="More_Fences5" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="Fences" type="Node3D" parent="More_Fences5"]
+
+[node name="fence" parent="More_Fences5/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences5/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences5/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences2" type="Node3D" parent="More_Fences5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
+
+[node name="fence" parent="More_Fences5/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences5/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences5/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences3" type="Node3D" parent="More_Fences5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="fence" parent="More_Fences5/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences5/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences5/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences4" type="Node3D" parent="More_Fences5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
+
+[node name="fence" parent="More_Fences5/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences5/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences5/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="arch_gate2" parent="." instance=ExtResource("10_5x77v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.045, -42)
+
+[node name="More_Fences6" type="Node3D" parent="."]
+transform = Transform3D(1.19249e-08, 0, 1, 0, 1, 0, -1, 0, 1.19249e-08, 1.75, 0, -43.75)
+
+[node name="Fences" type="Node3D" parent="More_Fences6"]
+
+[node name="fence" parent="More_Fences6/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences6/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences6/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences2" type="Node3D" parent="More_Fences6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
+
+[node name="fence" parent="More_Fences6/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences6/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences6/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences3" type="Node3D" parent="More_Fences6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="fence" parent="More_Fences6/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences6/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences6/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences4" type="Node3D" parent="More_Fences6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
+
+[node name="fence" parent="More_Fences6/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences6/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences6/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="More_Fences7" type="Node3D" parent="."]
+transform = Transform3D(1.19249e-08, 0, 1, 0, 1, 0, -1, 0, 1.19249e-08, 1.75, 0, -1.75)
+
+[node name="Fences" type="Node3D" parent="More_Fences7"]
+
+[node name="fence" parent="More_Fences7/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences7/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences7/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences2" type="Node3D" parent="More_Fences7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
+
+[node name="fence" parent="More_Fences7/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences7/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences7/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences3" type="Node3D" parent="More_Fences7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="fence" parent="More_Fences7/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences7/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences7/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences4" type="Node3D" parent="More_Fences7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
+
+[node name="fence" parent="More_Fences7/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences7/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences7/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="More_Fences8" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.5658, 5.72205e-06, 0.135574)
+
+[node name="Fences" type="Node3D" parent="More_Fences8"]
+
+[node name="fence" parent="More_Fences8/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences8/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences8/Fences" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences2" type="Node3D" parent="More_Fences8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
+
+[node name="fence" parent="More_Fences8/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences8/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences8/Fences2" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences3" type="Node3D" parent="More_Fences8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="fence" parent="More_Fences8/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences8/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences8/Fences3" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="Fences4" type="Node3D" parent="More_Fences8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
+
+[node name="fence" parent="More_Fences8/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, -1.045, 42)
+
+[node name="fence2" parent="More_Fences8/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
+
+[node name="fence3" parent="More_Fences8/Fences4" instance=ExtResource("11_v881x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)

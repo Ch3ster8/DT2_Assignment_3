@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://6xil5bcbft1e"]
+
+[ext_resource type="PackedScene" uid="uid://cib6vuv1qrwac" path="res://Scenes/player.tscn" id="1_s377d"]
+[ext_resource type="PackedScene" uid="uid://bujlmw2mj4bwl" path="res://Scenes/environment.tscn" id="2_qflb4"]
+[ext_resource type="PackedScene" uid="uid://b2pbfarorhyv4" path="res://Scenes/seeker.tscn" id="3_cl1up"]
+
+[sub_resource type="Environment" id="Environment_fmi2m"]
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fmi2m")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.822144, -0.37796, 0.425706, 0, 0.747798, 0.663926, -0.56928, 0.545843, -0.614798, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_s377d")]
+
+[node name="Environment" parent="." instance=ExtResource("2_qflb4")]
+
+[node name="Seeker" parent="." instance=ExtResource("3_cl1up")]
+
+[node name="Patrol1" type="Node3D" parent="." groups=["patrol1"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0108, 0, 0)
+
+[node name="Patrol2" type="Node3D" parent="." groups=["patrol1"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0108, 0, -16.6636)
+
+[node name="Patrol3" type="Node3D" parent="." groups=["patrol1"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.422249, 0, -16.6636)
