@@ -10,6 +10,7 @@ func move(body, direction, delta):
 		body.velocity.y -= gravity * delta
 	direction = Vector3(direction.x, 0, direction.y).normalized()
 	if direction:
+		print(direction)
 		body.velocity.x = direction.x * speed
 		body.velocity.z = direction.z * speed
 	else:

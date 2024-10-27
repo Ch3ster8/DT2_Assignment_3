@@ -25,7 +25,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0108, 0, 0)
 
 [node name="Patrol2" type="Node3D" parent="." groups=["patrol1"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0108, 0, -16.6636)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0108, 0, -30.2051)
 
 [node name="Patrol3" type="Node3D" parent="." groups=["patrol1"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.422249, 0, -16.6636)
