@@ -25,8 +25,7 @@ patrol_group = "patrol1"
 movement = NodePath("../../Movement")
 parent = NodePath("../..")
 
-[node name="Movement" parent="." node_paths=PackedStringArray("nav_agent") instance=ExtResource("3_44x0p")]
-nav_agent = NodePath("../NavigationAgent3D")
+[node name="Movement" parent="." instance=ExtResource("3_44x0p")]
 
 [node name="Skeleton_Warrior" parent="." instance=ExtResource("1_ktdpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.18, 0)

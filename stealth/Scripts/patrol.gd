@@ -12,17 +12,14 @@ func start():
 	
 func physcis_update(_delta):
 	if cur_point:
-		print(cur_point)
 		var pos = parent.global_position
-		if pos.distance_to(cur_point.global_position) < 10:
+		if pos.distance_to(cur_point.global_position) < 1:
 			var index = points.find(cur_point)
 			if points.size() > index+1:
 				cur_point = points[index +1]
 			else:
 				cur_point = points[0]
-		var direction = pos.direction_to(cur_point.global_position)
-		direction.y = -direction.y
-		movement.move(parent, direction, _delta)
+		movement.move_to(parent, cur_point.global_position, _delta)
 			
 			
 			
