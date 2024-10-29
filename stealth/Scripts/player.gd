@@ -1,6 +1,6 @@
 extends CharacterBody3D
-
-const speed = 4.5
+class_name player
+const speed = 7
 const sensitivity = 0.005
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 

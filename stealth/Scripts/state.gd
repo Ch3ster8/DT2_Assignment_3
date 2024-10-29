@@ -5,11 +5,14 @@ signal change(new_state : String)
 func update(_delta):
 	pass
 	
-func physcis_update(_delta):
+func physics_update(_delta):
 	pass
 
 func start():
 	pass
 
+func enter():
+	pass
+	
 func leave():
 	pass
