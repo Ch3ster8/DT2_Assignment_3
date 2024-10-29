@@ -1,8 +1,11 @@
 extends CharacterBody3D
 class_name player
-const speed = 7
-const sensitivity = 0.005
+@export var speed = 7
+@export var sensitivity = 0.005
+@export var sound_amp = 15
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
+@onready var sound_radius = speed * sound_amp
 
 const bob_freq = 2
 const bob_amp = 0.04
@@ -20,6 +23,7 @@ func _unhandled_input(event):
 		camera.rotate_x(-event.relative.y * sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
 func _physics_process(delta):
+	sound_radius = speed * sound_amp
 	if !is_on_floor():
 		velocity.y -= gravity * delta
 	var input_dir = Input.get_vector("left", "right", "forward", "back")

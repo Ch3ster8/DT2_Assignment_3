@@ -9,6 +9,7 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("head", "camera") groups=["player_group"]]
 script = ExtResource("1_gc3oy")
+sound_amp = 2
 head = NodePath("Head")
 camera = NodePath("Head/Camera3D")
 

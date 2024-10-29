@@ -3,7 +3,7 @@ class_name Movement
 const speed = 4.5
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var nav_agent : NavigationAgent3D
-var player_node
+var player_node : player
 func _ready():
 	player_node = get_tree().get_first_node_in_group("player_group")
 	
