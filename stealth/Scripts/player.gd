@@ -23,15 +23,16 @@ func _unhandled_input(event):
 		camera.rotate_x(-event.relative.y * sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
 func _physics_process(delta):
-	sound_radius = speed * sound_amp
 	if !is_on_floor():
 		velocity.y -= gravity * delta
 	var input_dir = Input.get_vector("left", "right", "forward", "back")
 	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
+		sound_radius = speed * sound_amp
 		velocity.x = direction.x * speed
 		velocity.z = direction.z * speed
 	else:
+		sound_radius = 0
 		velocity.x = 0
 		velocity.z = 0
 		

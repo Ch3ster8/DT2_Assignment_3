@@ -3,10 +3,12 @@ extends state
 @export var seethrough : Node3D
 @export var alert : Sprite3D
 @export var sight_node : sight
+@export var icon : Texture2D
 var timer : SceneTreeTimer
 
 func enter():
 	emit_signal("change", "search")
+	alert.texture = icon
 	alert.visible = true
 	timer = get_tree().create_timer(alert_time, false)
 	while timer.time_left > 0:

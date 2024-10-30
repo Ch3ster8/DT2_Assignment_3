@@ -11,9 +11,9 @@ func check_sight_unrestricted():
 	var result = space_state.intersect_ray(query)
 	if result:
 		if result["collider"] is player:
-			DebugDraw3D.draw_line(global_position, player_node.global_position, Color(1, 0, 0))
+			#DebugDraw3D.draw_line(global_position, player_node.global_position, Color(1, 0, 0))
 			return true
-	DebugDraw3D.draw_line(global_position, player_node.global_position, Color(0, 0, 1))
+	#DebugDraw3D.draw_line(global_position, player_node.global_position, Color(0, 0, 1))
 	return false
 	
 func check_sight():
@@ -27,7 +27,7 @@ func check_sight():
 		var angle = rad_to_deg(forward.angle_to(direction))
 		if angle <= 75 and angle >= 0 or angle <= 360 and angle >= 255:
 			if result["collider"] is player:
-				DebugDraw3D.draw_line(global_position, player_node.global_position, Color(1, 0, 0))
+				#DebugDraw3D.draw_line(global_position, player_node.global_position, Color(1, 0, 0))
 				return true
-	DebugDraw3D.draw_line(global_position, player_node.global_position, Color(0, 0, 1))
+	#DebugDraw3D.draw_line(global_position, player_node.global_position, Color(0, 0, 1))
 	return false

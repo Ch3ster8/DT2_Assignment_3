@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cib6vuv1qrwac"]
+[gd_scene load_steps=6 format=3 uid="uid://cib6vuv1qrwac"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_gc3oy"]
+[ext_resource type="Texture2D" uid="uid://cdcqb4i28fw3w" path="res://Assets/Outsourced/alert.png" id="2_p62ng"]
+[ext_resource type="Texture2D" uid="uid://dhq5es7y3kss2" path="res://Assets/Outsourced/ear.png" id="3_0kx8d"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ur330"]
 
@@ -23,3 +25,37 @@ shape = SubResource("ConvexPolygonShape3D_sg845")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.601209, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="HFlowContainer" type="HFlowContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -204.0
+grow_horizontal = 0
+grow_vertical = 0
+reverse_fill = true
+
+[node name="Alert" type="TextureRect" parent="Control/HFlowContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("2_p62ng")
+expand_mode = 1
+
+[node name="Ear" type="TextureRect" parent="Control/HFlowContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("3_0kx8d")
+expand_mode = 1
