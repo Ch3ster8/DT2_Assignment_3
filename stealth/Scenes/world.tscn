@@ -10,6 +10,14 @@ polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1), PackedInt32Arr
 agent_radius = 1.0
 
 [sub_resource type="Environment" id="Environment_fmi2m"]
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 1.0
+volumetric_fog_density = 0.142
+volumetric_fog_albedo = Color(1, 1, 0.505882, 1)
+volumetric_fog_emission = Color(1, 1, 0.505882, 1)
+volumetric_fog_emission_energy = 0.5
+volumetric_fog_gi_inject = 3.0
+volumetric_fog_length = 32.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o8835"]
 

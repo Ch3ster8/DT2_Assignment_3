@@ -24,6 +24,12 @@ script = ExtResource("1_kpxf1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0.45)
 script = ExtResource("1_6b66p")
 
+[node name="SpotLight3D" type="SpotLight3D" parent="Sight"]
+transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 0, -4.37114e-08, 1, 8.74228e-08, 1, 4.37114e-08, 0, 2.82067, 0)
+light_color = Color(1, 0, 0, 1)
+light_energy = 10.0
+spot_range = 20.0
+
 [node name="Movement" parent="." node_paths=PackedStringArray("nav_agent") instance=ExtResource("3_44x0p")]
 nav_agent = NodePath("../NavigationAgent3D")
 
