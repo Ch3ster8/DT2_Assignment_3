@@ -23,7 +23,7 @@ volumetric_fog_length = 32.0
 
 [node name="World" type="Node3D"]
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." groups=["navigation_reg"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.98373, 0, -3.34241)
 navigation_mesh = SubResource("NavigationMesh_goe7v")
 

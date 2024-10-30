@@ -16,3 +16,6 @@ func enter():
 	
 func leave():
 	pass
+func disapear_annoying_warning():
+	var whatever = change.get_name()
+	whatever.ends_with("e")
