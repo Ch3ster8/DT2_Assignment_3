@@ -2,6 +2,7 @@ extends CharacterBody3D
 class_name player
 @export var speed = 7
 @export var sensitivity = 0.005
+@export var joy_sensitivity = 0.050
 @export var sound_amp = 15
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -23,6 +24,11 @@ func _unhandled_input(event):
 		camera.rotate_x(-event.relative.y * sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
 func _physics_process(delta):
+	var axis = Input.get_vector("left_view", "right_view", "up_view", "down_view")
+	if axis:
+		head.rotate_y(-axis.x * joy_sensitivity)
+		camera.rotate_x(-axis.y * joy_sensitivity)
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
 	if !is_on_floor():
 		velocity.y -= gravity * delta
 	var input_dir = Input.get_vector("left", "right", "forward", "back")
