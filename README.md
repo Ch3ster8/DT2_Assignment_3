@@ -19,11 +19,13 @@
 
    <a name="Implementation"></a>
    * ### Implementation
-       * Implementations of plans don't always go according to plan
+       * The implementation of my plan went like this, I started with designing the state machine, it needed to be modular and easy to work with, whilst also being understandable from a third parties perspective. Code designed this way has the best future application due to it's ease of use and because it's understandability to third parties allows it to be shared arround even without the original coder.
+       * Using the state machine I opened up my flow chart for reference but before I could make the enemies states I had to make basic functions for the enemy, so I made an empty node with a movement script that I could reference and use the functions of to move my enemy, I did this so that I didn't have to recode the movement for each state that required the enemy to move.
          
    <a name="Future-Application"></a>
    * ### Future Application
        * I have coded the state machine in my game to be modular meaning rather than having to alter the code every time I want to do something new I instead just have to add a fictional module of sorts to the state machine. Having a modular design lets future applications utilise the state machine however needed.
        *  An example of a future application for my state machine could be a user interface as only one interface should be open at any point in time to avoid overlapping information, this is almost identical to the function of a state machine. Only one state can be active at any point in time and can only switch between states if it meets a certain condition, like state machines it's required for an input to be pressed for the interface to change, converting each interface into a state and putting them into a state machine would make for a very effective user interface that wouldn't run into any overlapping issues.
+         
 # References
    * 
