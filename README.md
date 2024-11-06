@@ -5,14 +5,14 @@
 
 <a name="Table-of-Contents"></a>
 # Table of Contents
-   * ## [Development Process](# Development-Process)
+   * ## [Development Process](##Development-Process)
         * [Planning](#Planning)
         * [Implementation](#Implementation)
         * [Testing](#Testing)
         * [Evaluation](#Evaluation)
         * [Iteration](#Iteration)
-   * ## [Future Application](# Future-Application)
-   * ## [References](# References)
+   * ## [Future Application](#Future-Application)
+   * ## [References](#References)
      
 <a name="Development-Process"></a>
 # Development Process
