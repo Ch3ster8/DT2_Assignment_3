@@ -32,13 +32,14 @@
    
    <a name="Testing"></a>
    * ### Testing
-
+       * F
    <a name="Evaluation"></a>
    * ### Evaluation
-     
+       * F
    <a name="Iteration"></a>
    * ### Iteration
-     
+       * F
+         
 <a name="Future-Application"></a>
 # Future Application
    * I have coded the state machine in my game to be modular meaning rather than having to alter the code every time I want to do something new I instead just have to add a fictional module of sorts to the state machine. Having a modular design lets future applications utilise the state machine however needed.
