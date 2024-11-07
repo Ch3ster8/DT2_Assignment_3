@@ -32,14 +32,21 @@
    
    <a name="Testing"></a>
    * ### Testing
-       * Here are the [Testing Responses](https://docs.google.com/spreadsheets/d/1b2tB4MSCUddRP0Ojwdy0C3jixZR0UF_ECB9bY4Dlsy8/edit?usp=sharing), Unfortunately all of the player experiences were negative however this resulted in some good feedback on how to improve my game and will ultimately increase the playability of my game.
+       * Unfortunately all of the player experiences were negative however this resulted in some good feedback on how to improve my game and will ultimately increase the playability of my game.
+         
        * | Person      | Good or Bad? | What did I do well? | What could I improve on? | What could I add in a short ammount of time? |
          | :---:       |  :----:     |     :----:    |     :----:    |     :----:    |
-         | Ethan Perkins | Bad | I liked how your enemy incoprated hearing states which influenced the state machine of the enemy | Visual indicators for the state that the enemy is in would be cool. However I think that if you were to incoprate this some sort of other objective ratjher bthan just running would have to be implmented. Such as missions or other tasks and as a result of what you do in these tasks they reveal somthing like the state of the enemy | An actual ending please because right now its not very intuitive |
+         | Ethan Perkins | Bad | I liked how your enemy incoprated hearing states which influenced the state machine of the enemy | Visual indicators for the state that the enemy is in would be cool. However I think that if you were to incoprate this some sort of other objective rather than just running would have to be implmented. Such as missions or other tasks and as a result of what you do in these tasks they reveal somthing like the state of the enemy | An actual ending please because right now its not very intuitive |
          | Blake Rushworth | Bad | Its pathfinding its good | No real objective, missing collisions on borders, the player movement needs improving | You said that the enemy's location is shown every now and again but i didnt notice so make it easier to understand and find the enemy using it. |
    <a name="Evaluation"></a>
    * ### Evaluation
-       * 
+       * Everyone liked how the enemy could hear and see the player however it took them a while to notice this due to a lack of visual indicators.
+         
+       * The game as of this playtesting was not really a game, it did not have a specific start or finish and whilst this is okay for the assignment task, adding a start and finish could be used to influence the enemys states and increase further complexity. In addition to this adding interactable tasks for the player to play arround with could add an extra state to the enemy allowing them to assasinate the player from behind as an example of how adding gameplay features could affect the states.
+         
+       * There were a few minor collision issues resulting in the player being able to escape the boundaries and avoid the enemy entirely which is a simple fix.
+    
+       * The player movement felt wrong to Blake but I think this is because of the bobbing effect that I apply to the camera, I only applied this effect to the x-axis resulting in wrong looking motions when moving in any other axis.
    <a name="Iteration"></a>
    * ### Iteration
        * F
