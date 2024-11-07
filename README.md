@@ -33,6 +33,10 @@
    <a name="Testing"></a>
    * ### Testing
        * Here are the [Testing Responses](https://docs.google.com/spreadsheets/d/1b2tB4MSCUddRP0Ojwdy0C3jixZR0UF_ECB9bY4Dlsy8/edit?usp=sharing), Unfortunately all of the player experiences were negative however this resulted in some good feedback on how to improve my game and will ultimately increase the playability of my game.
+       * | Person      | Good or Bad? | What did I do well? | What could I improve on? | What could I add in a short ammount of time? |
+         | :---:       |  :----:     |     :----:    |     :----:    |     :----:    |
+         | Ethan Perkins | Bad | I liked how your enemy incoprated hearing states which influenced the state machine of the enemy | Visual indicators for the state that the enemy is in would be cool. However I think that if you were to incoprate this some sort of other objective ratjher bthan just running would have to be implmented. Such as missions or other tasks and as a result of what you do in these tasks they reveal somthing like the state of the enemy | An actual ending please because right now its not very intuitive |
+         | Blake Rushworth | Bad | Its pathfinding its good | No real objective, missing collisions on borders, the player movement needs improving | You said that the enemy's location is shown every now and again but i didnt notice so make it easier to understand and find the enemy using it. |
    <a name="Evaluation"></a>
    * ### Evaluation
        * 
