@@ -38,6 +38,7 @@
          | :---:       |  :----:     |     :----:    |     :----:    |     :----:    |
          | Ethan Perkins | Bad | I liked how your enemy incoprated hearing states which influenced the state machine of the enemy | Visual indicators for the state that the enemy is in would be cool. However I think that if you were to incoprate this some sort of other objective rather than just running would have to be implmented. Such as missions or other tasks and as a result of what you do in these tasks they reveal somthing like the state of the enemy | An actual ending please because right now its not very intuitive |
          | Blake Rushworth | Bad | Its pathfinding its good | No real objective, missing collisions on borders, the player movement needs improving | You said that the enemy's location is shown every now and again but i didnt notice so make it easier to understand and find the enemy using it. |
+   
    <a name="Evaluation"></a>
    * ### Evaluation
        * Everyone liked how the enemy could hear and see the player however it took them a while to notice this due to a lack of visual indicators.
@@ -47,9 +48,17 @@
        * There were a few minor collision issues resulting in the player being able to escape the boundaries and avoid the enemy entirely which is a simple fix.
     
        * The player movement felt wrong to Blake but I think this is because of the bobbing effect that I apply to the camera, I only applied this effect to the x-axis resulting in wrong looking motions when moving in any other axis.
+   
    <a name="Iteration"></a>
    * ### Iteration
-       * F
+   * **RE-ITERATE OVER THIS TO SEE IF I ADDED EVERYTHING HERE**
+       * To start off fixing the issue of not seeing the original visual indicators for the player I added an icon in the bottom right of the screen that pops up temporarily depending on whether the enemy has heard or seen you, then I also added arrows pointing towards the enemy when either of these states has come into affect, this should hopefuly be enough to allow the player to understand what the enemy is up to and avoid them as the game is designed for.
+         
+       * To start off I need add the enemy attack state allowing the enemy to kill the player, this gives actual consequences for getting caught by the enemy, this in turn would show a death screen allowing the player to restart the game, then I need to have some form of task that the player needs to complete without getting caught. Before making the enemy I designed the map to have two specific gates, taking inspiration from [Dead By Daylight](https://deadbydaylight.com) when I complete all the neccesary tasks two gates will open on each side of the map allowing the player to escape and giving the game an ending, when all the tasks are complete the enemies will go into a frantic search mode ignoring all patrol points and instead going in random directions in order to search for the player and stop them from escaping.
+    
+       * The collisions are as simple as using an inbuilt godot feature that allows me to add collisions based on the mesh instance attached to the object, doing this allowed me to create proper collisions for the boundaries and stop the player from leaving the map unwillingly.
+    
+       * As mentioned in **Testing** fixing the movement is as simple as copying the camera bobbing line on the x-axis and changing the "x" to a "y" resulting in the bobbing also being on the y-axis. 
          
 <a name="Future-Application"></a>
 # Future Application
