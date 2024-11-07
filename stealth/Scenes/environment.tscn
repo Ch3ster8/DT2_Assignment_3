@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bujlmw2mj4bwl"]
+[gd_scene load_steps=15 format=3 uid="uid://bujlmw2mj4bwl"]
 
 [ext_resource type="PackedScene" uid="uid://ducue5apa1ft2" path="res://Assets/Outsourced/Halloween_bits/tree_pine_yellow_small.fbx" id="1_d3vlm"]
 [ext_resource type="PackedScene" uid="uid://dekvs1h6tutbg" path="res://Assets/Outsourced/Halloween_bits/tree_pine_yellow_large.fbx" id="2_xam4i"]
@@ -16,6 +16,9 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_325su"]
 albedo_color = Color(0.47788, 0.47788, 0.47788, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oac3g"]
+size = Vector3(92.885, 10.26, 1)
 
 [node name="Environment" type="Node3D"]
 
@@ -1999,6 +2002,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
 [node name="fence3" parent="More_Fences/Fences" instance=ExtResource("11_v881x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="More_Fences/Fences"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="More_Fences/Fences/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -42.0763)
+shape = SubResource("BoxShape3D_oac3g")
+
 [node name="Fences2" type="Node3D" parent="More_Fences"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.505, 0, 0)
 
@@ -2010,6 +2019,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
 
 [node name="fence3" parent="More_Fences/Fences2" instance=ExtResource("11_v881x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="More_Fences/Fences2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="More_Fences/Fences2/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33.2715, 0, -0.00710392)
+shape = SubResource("BoxShape3D_oac3g")
 
 [node name="Fences3" type="Node3D" parent="More_Fences"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
@@ -2023,6 +2038,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
 [node name="fence3" parent="More_Fences/Fences3" instance=ExtResource("11_v881x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="More_Fences/Fences3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="More_Fences/Fences3/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 64.7834, 0, -0.00710392)
+shape = SubResource("BoxShape3D_oac3g")
+
 [node name="Fences4" type="Node3D" parent="More_Fences"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5, 0, 0)
 
@@ -2034,6 +2055,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -1.045, 42)
 
 [node name="fence3" parent="More_Fences/Fences4" instance=ExtResource("11_v881x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -1.045, 42)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="More_Fences/Fences4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="More_Fences/Fences4/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.9918, 0, 41.9022)
+shape = SubResource("BoxShape3D_oac3g")
 
 [node name="More_Fences2" type="Node3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.75, 0, 43.75)

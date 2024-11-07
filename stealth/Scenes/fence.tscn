@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv10e8ny7m5bu"]
+
+[ext_resource type="PackedScene" uid="uid://bkxtcd0coevdl" path="res://Assets/Outsourced/Halloween_bits/fence.fbx" id="1_mg4ly"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ac12n"]
+points = PackedVector3Array(0.0177758, 0.000356832, 0.0225397, -0.0203175, -0.00281746, -0.00031746, -0.0203175, -0.00281746, 0.0206334, -0.0203175, 0.00289683, -0.00031746, 0.0203175, -0.00281746, -0.00031746, 0.0203175, 0.00289683, -0.00031746, -0.0203175, 0.00289683, 0.0206334, 0.0203175, -0.00281746, 0.0206334, 0.0203175, 0.00289683, 0.0206334, -0.0177758, -0.000277467, 0.0225397, 0.0190446, -0.00154718, 0.0219043, -0.019681, 0.00226085, 0.0212688, -0.0190446, -0.00154718, 0.0219043, -0.0177758, 0.000356832, 0.0225397, 0.019681, 0.00226085, 0.0212688, 0.0177758, -0.000277467, 0.0225397, 0.0190446, 0.000991691, 0.0219043, -0.0190446, 0.000991691, 0.0219043)
+
+[node name="fence" instance=ExtResource("1_mg4ly")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_ac12n")
