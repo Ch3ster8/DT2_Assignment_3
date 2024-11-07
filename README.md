@@ -16,6 +16,7 @@
      
 <a name="Development-Process"></a>
 # Development Process
+   * [Table of Contents](#Table-of-Contents)
    <a name="Planning"></a>
    * ### Planning
        * To start I decided to plan, the goal was to come up with a game idea that could be suitably made within a short period of time whilst also including advanced AI and being an engaging experience for the players to allow for testers who are genuinely intrigued by the game.
