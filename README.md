@@ -32,10 +32,10 @@
    
    <a name="Testing"></a>
    * ### Testing
-       * F
+       * Here are the [Testing Responses](https://docs.google.com/spreadsheets/d/1b2tB4MSCUddRP0Ojwdy0C3jixZR0UF_ECB9bY4Dlsy8/edit?usp=sharing), Unfortunately all of the player experiences were negative however this resulted in some good feedback on how to improve my game and will ultimately increase the playability of my game.
    <a name="Evaluation"></a>
    * ### Evaluation
-       * F
+       * 
    <a name="Iteration"></a>
    * ### Iteration
        * F
