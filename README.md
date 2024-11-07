@@ -42,6 +42,7 @@
          | :---:       |  :----:     |     :----:    |     :----:    |     :----:    |
          | Ethan Perkins | Bad | I liked how your enemy incoprated hearing states which influenced the state machine of the enemy | Visual indicators for the state that the enemy is in would be cool. However I think that if you were to incoprate this some sort of other objective rather than just running would have to be implmented. Such as missions or other tasks and as a result of what you do in these tasks they reveal somthing like the state of the enemy | An actual ending please because right now its not very intuitive |
          | Blake Rushworth | Bad | Its pathfinding its good | No real objective, missing collisions on borders, the player movement needs improving | You said that the enemy's location is shown every now and again but i didnt notice so make it easier to understand and find the enemy using it. |
+         | Jamie Potter | Bad | It follows the player well and was allways able to get to me with no trouble | The player movement was way too fast, it allowed me to run away from the npc way too easily. | A Real objective to complete in the game, An actual map, have the npc attack. |
 
        * [Table of Contents](#Table-of-Contents)
    
