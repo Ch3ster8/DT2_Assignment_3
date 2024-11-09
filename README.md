@@ -86,4 +86,6 @@
    * [Table of Contents](#Table-of-Contents)
          
 # References
-   * 
+  ### These are completely free to use in any project of your choosing (yes, also commercially):
+   * “KayKit: Halloween Bits.” Itch.io, 2024, kaylousberg.itch.io/halloween-bits. Accessed 9 Nov. 2024.
+   * “KayKit - Character Pack: Skeletons by Kay Lousberg.” Itch.io, kaylousberg.itch.io/kaykit-skeletons.
