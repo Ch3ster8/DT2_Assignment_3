@@ -36,13 +36,13 @@
    
    <a name="Testing"></a>
    * ### Testing
-       * Unfortunately all of the player experiences were negative however this resulted in some good feedback on how to improve my game and will ultimately increase the playability of my game.
+       * Unfortunately all of the player experiences were negative however this resulted in some good feedback on how to improve my game and will ultimately increase the playability and technicality of my game.
          
        * | Person      | Good or Bad? | What did I do well? | What could I improve on? | What could I add in a short amount of time? |
          | :---:       |  :----:     |     :----:    |     :----:    |     :----:    |
          | Ethan Perkins | Bad | I liked how your enemy incorporated hearing states which influenced the state machine of the enemy | Visual indicators for the state that the enemy is in would be cool. However, I think that if you were to incorporate this some sort of other objective rather than just running would have to be implemented. Such as missions or other tasks and as a result of what you do in these tasks they reveal something like the state of the enemy | An actual ending please because right now it's not very intuitive |
-         | Blake Rushworth | Bad | Its pathfinding is good | No real objective, missing collisions on borders, the player movement needs improving | You said that the enemy's location is shown every now and again but i didn't notice so make it easier to understand and find the enemy using it. |
-         | Jamie Potter | Bad | It followed the player well and was always able to get to me with no trouble | The player's movement was way too fast, it allowed me to run away from the npc way too easily. | A Real objective to complete in the game, An actual map, have the npc attack. |
+         | Blake Rushworth | Bad | Its pathfinding is good | No real objective, missing collisions on borders, the player movement needs improving | You said that the enemy's location is shown every now and again but I didn't notice so make it easier to understand and find the enemy using it. |
+         | Jamie Potter | Bad | It followed the player well and was always able to get to me with no trouble | The player's movement was way too fast, it allowed me to run away from the NPC way too easily. | A Real objective to complete in the game, An actual map, have the NPC attack. |
 
        * [Table of Contents](#Table-of-Contents)
    
@@ -56,7 +56,7 @@
     
        * The player movement felt wrong to Blake but I think this is because of the bobbing effect that I applied to the camera, I only applied this effect to the x-axis resulting in wrong-looking motions when moving in any other axis.
     
-       * Jamie thought the movement was too fast and I agree, I think the enemy should be faster than the player but then this causes the issue of when your seen there is no escaping the enemy. Taking more inspiration from [Dead By Daylight](https://deadbydaylight.com) as my games concept is much the same, in [Dead By Daylight](https://deadbydaylight.com) the player can use pallets to stun the enemy for a little bit allowing the player to run away and hopefully escape, there is also a flashlight that can be used to blind the enemy also giving the player another chance to escape.
+       * Jamie thought the movement was too fast and I agree, I think the enemy should be faster than the player but then this causes the issue of when your seen there is no escaping the enemy. Taking more inspiration from [Dead By Daylight](https://deadbydaylight.com) as my game concept is much the same, in [Dead By Daylight](https://deadbydaylight.com) the player can use pallets to stun the enemy for a little bit allowing the player to run away and hopefully escape, there is also a flashlight that can be used to blind the enemy also giving the player another chance to escape.
     
        * [Table of Contents](#Table-of-Contents)
    
