@@ -61,13 +61,13 @@
    <a name="Iteration"></a>
    * ### Iteration
    * **RE-ITERATE OVER THIS TO SEE IF I ADDED EVERYTHING HERE**
-       * To start off fixing the issue of not seeing the original visual indicators for the player I added an icon in the bottom right of the screen that pops up temporarily depending on whether the enemy has heard or seen you, then I also added arrows pointing towards the enemy when either of these states has come into effect, this should hopefully be enough to allow the player to understand what the enemy is up to and avoid them as the game is designed for.
+       * To start off fixing the issue of not seeing the original visual indicators for the player I added an icon in the bottom right of the screen that pops up temporarily depending on whether the enemy has heard or seen you, then I also added arrows pointing "left" or "right" towards the enemy when either of these states has come into effect, this should hopefully be enough to allow the player to understand what the enemy is up to and avoid them as per the game's design.
          
        * To start off I needed to add the enemy attack state allowing the enemy to kill the player, this gave actual consequences for getting caught by the enemy, this in turn would show a death screen allowing the player to restart the game, then I needed to have some form of task that the player needs to complete without getting caught. Before making the enemy I designed the map to have two specific gates, taking inspiration from [Dead By Daylight](https://deadbydaylight.com) when I complete all the necessary tasks two gates will open on each side of the map allowing the player to escape and giving the game an ending. When all the tasks are complete the enemies will go into a frantic search mode ignoring all patrol points and instead going in random directions in order to search for the player and stop them from escaping.
     
        * The collisions were as simple as using an inbuilt godot feature that allowed me to add collisions based on the mesh instance attached to the object, doing this allowed me to create proper collisions for the boundaries and stop the player from leaving the map unwillingly.
     
-       * As mentioned in **Testing** fixing the movement was as simple as copying the camera bobbing line on the x-axis and changing the "x" to a "y" resulting in the bobbing also being on the y-axis.
+       * As mentioned in **Testing** fixing the movement was as simple as copying the camera bobbing on the x-axis which uses sine waves to mimic a bobbing motion and changing it to the y-axis resulting in the bobbing being on both axis.
     
        * [Table of Contents](#Table-of-Contents)
          
@@ -76,6 +76,8 @@
    * I have coded the state machine in my game to be modular meaning rather than having to alter the code every time I want to do something new I instead just have to add a fictional module of sorts to the state machine. Having a modular design lets future applications utilise the state machine however needed.
    
    * An example of a future application for my state machine could be a user interface as only one interface should be open at any point in time to avoid overlapping information, this is almost identical to the function of a state machine. Only one state can be active at any point in time and can only switch between states if it meets a certain condition, like state machines it's required for an input to be pressed for the interface to change, converting each interface into a state and putting them into a state machine would make for a very effective user interface that wouldn't run into any overlapping issues.
+
+   * **Analyze technology concepts and strategies** State machines are not just used for UI and AI, they can be used in a variety of ways considering the versatility of their core concept as mentioned previously. Whilst state machines are used mechanically they can also be used theoretically, when planning out a task it can be useful to draw out each state and the transition to those states, for example when designing the player movement I would draw each action as a state and then each input as the transitions, then instead of coding a state machine for this I would code the player movement with this functionality in mind, so whilst the final product wasn't actually a state machine it still came in useful for planning out the task at hand and helps to avoid bugs by drawing out all the possible edge conditions.
 
    * [Table of Contents](#Table-of-Contents)
          
