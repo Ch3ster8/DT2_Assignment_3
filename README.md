@@ -56,6 +56,8 @@
     
        * The player movement felt wrong to Blake but I think this is because of the bobbing effect that I applied to the camera, I only applied this effect to the x-axis resulting in wrong-looking motions when moving in any other axis.
     
+       * Jamie thought the movement was too fast and I agree, I think the enemy should be faster than the player but then this causes the issue of when your seen there is no escaping the enemy. Taking more inspiration from [Dead By Daylight](https://deadbydaylight.com) as my games concept is much the same, in [Dead By Daylight](https://deadbydaylight.com) the player can use pallets to stun the enemy for a little bit allowing the player to run away and hopefully escape, there is also a flashlight that can be used to blind the enemy also giving the player another chance to escape.
+    
        * [Table of Contents](#Table-of-Contents)
    
    <a name="Iteration"></a>
@@ -67,7 +69,9 @@
     
        * The collisions were as simple as using an inbuilt godot feature that allowed me to add collisions based on the mesh instance attached to the object, doing this allowed me to create proper collisions for the boundaries and stop the player from leaving the map unwillingly.
     
-       * As mentioned in **Testing** fixing the movement was as simple as copying the camera bobbing on the x-axis which uses sine waves to mimic a bobbing motion and changing it to the y-axis resulting in the bobbing being on both axis.
+       * As mentioned in **Testing** fixing the movement was as simple as copying the camera bobbing on the x-axis which uses sine waves to mimic a bobbing motion and changing it to the y-axis resulting in the bobbing being on both axis, giving the player a more realistic feel and hopefully immersing them more into the game.
+    
+       * I decided to add a flashlight to the player allowing them to blind the enemy, this would trigger a blind state on the enemy causing them to run in a random direction until they can see again, the flashlight will have a limited battery and so the player must use it sparingly. This solves the issue of movement speed whilst still giving the player a fair chance.
     
        * [Table of Contents](#Table-of-Contents)
          
