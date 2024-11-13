@@ -30,7 +30,9 @@
    * ### Implementation
        * The implementation of my plan went like this, I started with designing the state machine, it needed to be modular and easy to work with, whilst also being understandable from a third party's perspective. Code designed this way has the best future application due to its ease of use and because its understandability to third parties allows it to be shared around even without the original coder.
          
-       * Using the state machine I opened up my flow chart for reference but before I could make the enemy states I had to make basic functions for the enemy, so I made an empty node with a movement script that I could reference and use the functions of to move my enemy, I did this so that I didn't have to recode the movement for each state that required the enemy to move.
+       * Using the state machine I opened up my flow chart for referencing but before I could make the enemy states I had to make basic functions for the enemy, so I made an empty node with a movement script that I could reference and use the functions of to move my enemy, I did this so that I didn't have to recode the movement for each state that required the enemy to move.
+    
+       * Using [DebugDraw3D](https://godotengine.org/asset-library/asset/1766) I was able to debug more information that allowed me to trouble shoot issues in a more timely manor. Using this addon I drew lines that showed me the raycast that I was casting from the enemy to the player and it would turn from blue to red if the enemy can see me.
     
        * [Table of Contents](#Table-of-Contents)
    
