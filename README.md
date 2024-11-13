@@ -43,6 +43,7 @@
          | Ethan Perkins | Bad | I liked how your enemy incorporated hearing states which influenced the state machine of the enemy | Visual indicators for the state that the enemy is in would be cool. However, I think that if you were to incorporate this some sort of other objective rather than just running would have to be implemented. Such as missions or other tasks and as a result of what you do in these tasks they reveal something like the state of the enemy | An actual ending please because right now it's not very intuitive |
          | Blake Rushworth | Bad | Its pathfinding is good | No real objective, missing collisions on borders, the player movement needs improving | You said that the enemy's location is shown every now and again but I didn't notice so make it easier to understand and find the enemy using it. |
          | Jamie Potter | Bad | It followed the player well and was always able to get to me with no trouble | The player's movement was way too fast, it allowed me to run away from the NPC way too easily. | A Real objective to complete in the game, An actual map, have the NPC attack. |
+         | Cameron Furlan | Good | The game's main enemy is well made and mimics a human well. | When the enemy touches the player the game lags out and completely breaks, it doesnt crash but it has major frame drops. | Some audio when walking and would be nice. |
 
        * [Table of Contents](#Table-of-Contents)
    
@@ -58,6 +59,8 @@
     
        * Jamie thought the movement was too fast and I agree, I think the enemy should be faster than the player but then this causes the issue of when your seen there is no escaping the enemy. Taking more inspiration from [Dead By Daylight](https://deadbydaylight.com) as my game concept is much the same, in [Dead By Daylight](https://deadbydaylight.com) the player can use pallets to stun the enemy for a little bit allowing the player to run away and hopefully escape, there is also a flashlight that can be used to blind the enemy also giving the player another chance to escape.
     
+       * The game could go through a major bug test to iron out all of the issues, removing many awefull encounters that the player could have and overall making the game more fun and playable, to test this I will need to run into every possible spot to see if the player can get stuck I will also try to break the AI with certain wall structures and how the player moves arround them.
+    
        * [Table of Contents](#Table-of-Contents)
    
    <a name="Iteration"></a>
@@ -72,6 +75,8 @@
        * As mentioned in **Testing** fixing the movement was as simple as copying the camera bobbing on the x-axis which uses sine waves to mimic a bobbing motion and changing it to the y-axis resulting in the bobbing being on both axis, giving the player a more realistic feel and hopefully immersing them more into the game.
     
        * I decided to add a flashlight to the player allowing them to blind the enemy, this would trigger a blind state on the enemy causing them to run in a random direction until they can see again, the flashlight will have a limited battery and so the player must use it sparingly. This solves the issue of movement speed whilst still giving the player a fair chance.
+    
+       * To solve the terrible frame drops when touching the enemy I added an Area3D to detect when the player is too close to the enemy, then I apply a force to the player pushing them away from the enemy which allows the collisions to avoid touching and patching the bug in it's entirety.
     
        * [Table of Contents](#Table-of-Contents)
          
