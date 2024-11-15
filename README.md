@@ -25,8 +25,11 @@
     
        * [Table of Contents](#Table-of-Contents)
 
+
+
    <a name="Implementation"></a>
    * ### Implementation
+       <a href="url"><img src="https://github.com/user-attachments/assets/9750114c-dcef-4d1e-a43d-cd018059bb24" align="right" height=25% width=25% ></a>
        * The implementation of my plan went like this, I started with designing the state machine, it needed to be modular and easy to work with, whilst also being understandable from a third party's perspective. Code designed this way has the best future application due to its ease of use and because its understandability to third parties allows it to be shared around even without the original coder.
          
        * Using the state machine I opened up my flow chart for referencing but before I could make the enemy states I had to make basic functions for the enemy, so I made an empty node with a movement script that I could reference and use the functions of to move my enemy, I did this so that I didn't have to recode the movement for each state that required the enemy to move.
