@@ -10,6 +10,7 @@
    * ## [References](#References-1)
      
 <a name="Development-Process"></a>
+
 # Development Process
    <a name="Planning"></a>
    * ### Planning
@@ -46,6 +47,7 @@
          | Cameron Furlan | Good | The game's main enemy is well-made and mimics a human well. | When the enemy touches the player the game lags out and completely breaks, it doesn't crash but it has major frame drops. | Some audio when walking would be nice. |
 
        * [Table of Contents](#Table-of-Contents)
+         <a href="url"><img src="https://github.com/user-attachments/assets/b0842a11-cab8-4394-b25d-552e52e3db0a" align="right" height=50% width=50% ></a>
    
    <a name="Evaluation"></a>
    * ### Evaluation
@@ -65,7 +67,7 @@
    
    <a name="Iteration"></a>
    * ### Iteration
-   * **Most of these feature did not get added to the final game**
+   * **Most of these features did not get added to the final game and are instead what I would have added given more time**
        * To start off fixing the issue of not seeing the original visual indicators for the player I added an icon in the bottom right of the screen that pops up temporarily depending on whether the enemy has heard or seen you, then I also added arrows pointing "left" or "right" towards the enemy when either of these states has come into effect, this should hopefully be enough to allow the player to understand what the enemy is up to and avoid them as per the game's design.
          
        * I needed to add the enemy attack state allowing the enemy to kill the player to give actual consequences for getting caught by the enemy, dying would show a death screen allowing the player to restart the game, then I needed to have some form of task that the player needs to complete without getting caught. Before making the enemy I designed the map to have two specific gates, taking inspiration from [Dead By Daylight](https://deadbydaylight.com) when I complete all the necessary tasks two gates will open on each side of the map allowing the player to escape and giving the game an ending. When all the tasks are complete the enemies will go into a frantic search mode ignoring all patrol points and instead going in random directions in order to search for the player and stop them from escaping. Due to the unpredictability when the enemies are in the frantic state, it makes the enemies harder to avoid, in turn, this gives the player a higher sense of satisfaction upon escaping.
