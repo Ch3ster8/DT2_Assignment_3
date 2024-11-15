@@ -49,5 +49,5 @@ func _physics_process(delta):
 func Headbob(time):
 	var pos = Vector3.ZERO
 	pos.y = sin(time * bob_freq) * bob_amp
-	#pos.x = cos(time * bob_freq) * bob_amp
+	pos.x = cos(time * bob_freq) * bob_amp
 	return pos
