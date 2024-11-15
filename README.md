@@ -10,6 +10,7 @@
    * ## [References](#References-1)
      
 <a name="Development-Process"></a>
+
 # Development Process
    <a name="Planning"></a>
    * ### Planning
@@ -24,8 +25,11 @@
     
        * [Table of Contents](#Table-of-Contents)
 
+
+
    <a name="Implementation"></a>
    * ### Implementation
+       <a href="url"><img src="https://github.com/user-attachments/assets/9750114c-dcef-4d1e-a43d-cd018059bb24" align="right" height=25% width=25% ></a>
        * The implementation of my plan went like this, I started with designing the state machine, it needed to be modular and easy to work with, whilst also being understandable from a third party's perspective. Code designed this way has the best future application due to its ease of use and because its understandability to third parties allows it to be shared around even without the original coder.
          
        * Using the state machine I opened up my flow chart for referencing but before I could make the enemy states I had to make basic functions for the enemy, so I made an empty node with a movement script that I could reference and use the functions of to move my enemy, I did this so that I didn't have to recode the movement for each state that required the enemy to move.
@@ -46,6 +50,7 @@
          | Cameron Furlan | Good | The game's main enemy is well-made and mimics a human well. | When the enemy touches the player the game lags out and completely breaks, it doesn't crash but it has major frame drops. | Some audio when walking would be nice. |
 
        * [Table of Contents](#Table-of-Contents)
+         <a href="url"><img src="https://github.com/user-attachments/assets/b0842a11-cab8-4394-b25d-552e52e3db0a" align="right" height=50% width=50% ></a>
    
    <a name="Evaluation"></a>
    * ### Evaluation
@@ -65,7 +70,7 @@
    
    <a name="Iteration"></a>
    * ### Iteration
-   * **RE-ITERATE OVER THIS TO SEE IF I ADDED EVERYTHING HERE**
+   * **Most of these features did not get added to the final game and are instead what I would have added given more time**
        * To start off fixing the issue of not seeing the original visual indicators for the player I added an icon in the bottom right of the screen that pops up temporarily depending on whether the enemy has heard or seen you, then I also added arrows pointing "left" or "right" towards the enemy when either of these states has come into effect, this should hopefully be enough to allow the player to understand what the enemy is up to and avoid them as per the game's design.
          
        * I needed to add the enemy attack state allowing the enemy to kill the player to give actual consequences for getting caught by the enemy, dying would show a death screen allowing the player to restart the game, then I needed to have some form of task that the player needs to complete without getting caught. Before making the enemy I designed the map to have two specific gates, taking inspiration from [Dead By Daylight](https://deadbydaylight.com) when I complete all the necessary tasks two gates will open on each side of the map allowing the player to escape and giving the game an ending. When all the tasks are complete the enemies will go into a frantic search mode ignoring all patrol points and instead going in random directions in order to search for the player and stop them from escaping. Due to the unpredictability when the enemies are in the frantic state, it makes the enemies harder to avoid, in turn, this gives the player a higher sense of satisfaction upon escaping.
@@ -82,11 +87,15 @@
          
 <a name="Future-Application"></a>
 # Future Application
+   
    * I have coded the state machine in my game to be modular meaning rather than having to alter the code every time I want to do something new I instead just have to add a fictional module of sorts to the state machine. Having a modular design lets future applications utilise the state machine however needed.
    
    * An example of a future application for my state machine could be a user interface as only one interface should be open at any point in time to avoid overlapping information, this is almost identical to the function of a state machine. Only one state can be active at any point in time and can only switch between states if it meets a certain condition, like state machines it's required for an input to be pressed for the interface to change, converting each interface into a state and putting them into a state machine would make for a very effective user interface that wouldn't run into any overlapping issues.
 
    * State machines are not just used for UI and AI, they can be used in a variety of ways considering the versatility of their core concept as mentioned previously. Whilst state machines are used mechanically they can also be used theoretically, when planning out a task it can be useful to draw out each state and the transition to those states, for example when designing the player movement I would draw each action as a state and then each input as the transitions, then instead of coding a state machine for this I would code the player movement with this functionality in mind, so whilst the final product wasn't actually a state machine it still came in useful for planning out the task at hand and helps to avoid bugs by drawing out all the possible edge conditions.
+
+   * State machines can also be used <a href="url"><img src="https://github.com/user-attachments/assets/02354c2f-f549-425c-8a3b-94914db9a30b" align="right" height=50% width=50% ></a>as a basis for other types of AI systems, an example of this is the Behaviour Tree, much like the state machine only one state can be active at any time, the difference is that the state machine is non-linear whereas the behaviour tree is linear, we can use a state machine to move between states but rather than moving all over the place we can move down the tree, treating each state more like an "If statement" until we get to the function that needs to be executed. This example shows that state machines are much bigger than first expected and are the basis of many AI systems, this allows for the state machine to be applied all across the field and can be used in many varying ways to create maximum capabilities. The image on the right is a behaviour tree for example aswell.
+
 
    * [Table of Contents](#Table-of-Contents)
          
@@ -94,3 +103,9 @@
   ### These are completely free to use in any project of your choosing (yes, also commercially):
    * “KayKit: Halloween Bits.” Itch.io, 2024, [halloween-bits](kaylousberg.itch.io/halloween-bits). Accessed 9 Nov. 2024.
    * “KayKit - Character Pack: Skeletons by Kay Lousberg.” Itch.io, [kaykit-skeletons](kaylousberg.itch.io/kaykit-skeletons). Accessed 9 Nov. 2024.
+   * **These aren't referenced in Harvard format because this is how the creator explicitly wanted them referenced and they wanted them referenced in-game which I have done:**
+   * <a href="https://www.flaticon.com/free-icons/hearing" title="hearing icons">Hearing icons created by Prashanth Rapolu 15 - Flaticon</a>
+   * <a href="https://www.flaticon.com/free-icons/exclamation-mark" title="exclamation mark icons">Exclamation mark icons created by flatart_icons - Flaticon</a>
+  
+   * "Researchgate", N/A, [Researchgate](https://www.researchgate.net/figure/A-behavior-tree-including-selector-sequence-condition-and-action-nodes_fig4_312869797). Accessed 15 Nov. 2024.
+   
