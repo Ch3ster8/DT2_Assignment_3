@@ -103,9 +103,9 @@
   ### These are completely free to use in any project of your choosing (yes, also commercially):
    * “KayKit: Halloween Bits.” Itch.io, 2024, [halloween-bits](kaylousberg.itch.io/halloween-bits). Accessed 9 Nov. 2024.
    * “KayKit - Character Pack: Skeletons by Kay Lousberg.” Itch.io, [kaykit-skeletons](kaylousberg.itch.io/kaykit-skeletons). Accessed 9 Nov. 2024.
+   * "Researchgate", N/A, [Researchgate](https://www.researchgate.net/figure/A-behavior-tree-including-selector-sequence-condition-and-action-nodes_fig4_312869797). Accessed 15 Nov. 2024.
    * **These aren't referenced in Harvard format because this is how the creator explicitly wanted them referenced and they wanted them referenced in-game which I have done:**
    * <a href="https://www.flaticon.com/free-icons/hearing" title="hearing icons">Hearing icons created by Prashanth Rapolu 15 - Flaticon</a>
    * <a href="https://www.flaticon.com/free-icons/exclamation-mark" title="exclamation mark icons">Exclamation mark icons created by flatart_icons - Flaticon</a>
   
-   * "Researchgate", N/A, [Researchgate](https://www.researchgate.net/figure/A-behavior-tree-including-selector-sequence-condition-and-action-nodes_fig4_312869797). Accessed 15 Nov. 2024.
    
